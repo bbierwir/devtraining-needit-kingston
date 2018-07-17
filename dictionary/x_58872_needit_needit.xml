@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection">
+        <element label="Requested For" mandatory="true" max_length="32" name="u_requested_for" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="information technology" label="Request Type" mandatory="true" max_length="40" name="u_request_type" type="string">
+            <choice>
+                <element label="Human Resources" sequence="0" value="hr"/>
+                <element label="Facilities" sequence="1" value="facilities"/>
+                <element label="Legal" sequence="2" value="legal"/>
+                <element label="Information Technology" sequence="3" value="it"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="What Needed" mandatory="true" max_length="40" name="u_what_needed" type="string">
+            <choice>
+                <element label="Human Resources 01" sequence="0" value="hr01"/>
+                <element label="Human Resources 02" sequence="1" value="hr02"/>
+                <element label="Facilities 01" sequence="2" value="facilities01"/>
+                <element label="Facilities 02" sequence="3" value="facilities02"/>
+                <element label="Legal 01" sequence="4" value="legal01"/>
+                <element label="Legal 02" sequence="5" value="legal02"/>
+                <element label="Information Technology 01" sequence="6" value="information technology01"/>
+                <element label="Information Technology 02" sequence="7" value="information technology02"/>
+            </choice>
+        </element>
+        <element label="When needed" mandatory="true" max_length="40" name="u_when_needed" type="glide_date_time"/>
+    </element>
+</database>
