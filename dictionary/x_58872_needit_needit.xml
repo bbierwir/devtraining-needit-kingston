@@ -14,7 +14,11 @@
         </element>
         <element attributes="edge_encryption_enabled=true" choice="1" label="What Needed" mandatory="true" max_length="40" name="u_what_needed" type="string">
             <choice>
+                <element label="Facilities 1" sequence="0" value="Facilities 1"/>
                 <element label="Human Resources 01" sequence="0" value="hr01"/>
+                <element label="Human Resources 2" sequence="0" value="Human Resources 2"/>
+                <element label="Legal 1" sequence="0" value="Legal 1"/>
+                <element label="Legal 2" sequence="0" value="Legal 2"/>
                 <element label="Human Resources 02" sequence="1" value="hr02"/>
                 <element label="Facilities 01" sequence="2" value="facilities01"/>
                 <element label="Facilities 02" sequence="3" value="facilities02"/>
